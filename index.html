@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Индекс Еда</title>
@@ -19,7 +23,7 @@
       <a href="/" class="logo">
         <img
           width="128"
-          src="img/logo.png"
+          src="./img/logo.png"
           alt="Лого: Индекс Еда"
           class="logo-image"
         />
@@ -27,7 +31,7 @@
       <form action="#" class="search-form">
         <input class="search-input" type="search" placeholder="Блюда" />
         <button class="search-button">
-          <img src="img/search-icon.svg" alt="search-icon" />
+          <img src="./img/search-icon.svg" alt="search-icon" />
         </button>
       </form>
       <div class="auth">
@@ -67,25 +71,116 @@
     </header>
     <main class="main">
       <div class="slider container">
-        <div class="slide slide-text-light slide-summer">
-          <div class="slide-content">
-            <h2 class="slide-title">Неделя летних овощей</h2>
-            <p class="slide-text">
-              Специальная овощная корзина. Новые продукты, специальные цены,
-              скидки!
-            </p>
-            <a href="#" class="btn button-primary">Заказать со скидкой</a>
+        <!-- Slider main container -->
+        <div class="swiper container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="slide slide-text-light slide-summer">
+                <div class="slide-content">
+                  <h2 class="slide-title">Неделя летних овощей</h2>
+                  <p class="slide-text">
+                    Специальная овощная корзина. Новые продукты, специальные
+                    цены, скидки!
+                  </p>
+                  <a href="#" class="btn button-primary">Заказать со скидкой</a>
+                </div>
+                <!-- /.slide-content -->
+              </div>
+              <!-- /.slide -->
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <div class="slide slide-text-light slide-autumn">
+                  <div class="slide-content">
+                    <h2 class="slide-title">Неделя осенних овощей</h2>
+                    <p class="slide-text">
+                      Специальная овощная корзина. Новые продукты, специальные
+                      цены, скидки!
+                    </p>
+                    <a href="#" class="btn button-primary"
+                      >Заказать со скидкой</a
+                    >
+                  </div>
+                  <!-- /.slide-content -->
+                </div>
+                <!-- /.slide -->
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide">
+                <div class="slide slide-text-light slide-vitamin">
+                  <div class="slide-content">
+                    <h2 class="slide-title">Витаминная неделя</h2>
+                    <p class="slide-text">
+                      Специальная овощная корзина. Новые продукты, специальные
+                      цены, скидки!
+                    </p>
+                    <a href="#" class="btn button-primary"
+                      >Заказать со скидкой</a
+                    >
+                  </div>
+                  <!-- /.slide-content -->
+                </div>
+                <!-- /.slide -->
+              </div>
+            </div>
           </div>
-          <!-- /.slide-content -->
+          <!-- If we need navigation buttons -->
+          <div class="slider-buttons">
+            <div class="slider-button slider-button-prev">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="20"
+                  fill="#EBEBEB"
+                  fill-opacity="0.7"
+                />
+                <path
+                  d="M24.752 31.994L14.879 22.121C14.3166 21.5584 14.0006 20.7955 14.0006 20C14.0006 19.2045 14.3166 18.4416 14.879 17.879L24.746 8.01201L26.16 9.42601L16.293 19.293C16.1055 19.4805 16.0002 19.7348 16.0002 20C16.0002 20.2652 16.1055 20.5195 16.293 20.707L26.166 30.58L24.752 31.994Z"
+                  fill="#F66A15"
+                />
+              </svg>
+            </div>
+            <div class="slider-button slider-button-next">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="20"
+                  transform="rotate(-180 20 20)"
+                  fill="#EBEBEB"
+                  fill-opacity="0.7"
+                />
+                <path
+                  d="M15.248 8.00599L25.121 17.879C25.6834 18.4416 25.9994 19.2045 25.9994 20C25.9994 20.7955 25.6834 21.5584 25.121 22.121L15.254 31.988L13.84 30.574L23.707 20.707C23.8945 20.5195 23.9998 20.2652 23.9998 20C23.9998 19.7348 23.8945 19.4805 23.707 19.293L13.834 9.41999L15.248 8.00599Z"
+                  fill="#F66A15"
+                />
+              </svg>
+            </div>
+            <!-- /.slider-buttons -->
+          </div>
         </div>
-        <!-- /.slide -->
       </div>
-      <!-- /.slider -->
       <div class="container">
         <div class="promo">
           <section class="card card-text-light sweet-basket">
             <img
-              src="img/sweet-basket.png"
+              src="./img/sweet-basket.png"
               alt="сладкая корзина"
               class="card-image"
             />
@@ -105,7 +200,7 @@
           </section>
           <section class="card card-text-light min-effort">
             <img
-              src="img/minimum.png"
+              src="./img/minimum.png"
               alt="Минимум усилий"
               class="card-image"
             />
@@ -130,42 +225,42 @@
         <h3 class="section-title">Доставка готовой еды на неделю</h3>
         <div class="delivery-cards">
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-1.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-1.png" alt="" />
             <span class="delivery-tag tag-health">ЗОЖ</span>
           </div>
           <!--/.delivery-card  -->
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-2.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-2.png" alt="" />
             <span class="delivery-tag tag-veg">Овощное</span>
           </div>
           <!--/.delivery-card  -->
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-3.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-3.png" alt="" />
             <span class="delivery-tag tag-meat">Мясное</span>
           </div>
           <!--/.delivery-card  -->
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-4.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-4.png" alt="" />
             <span class="delivery-tag tag-poultry">Птица</span>
           </div>
           <!--/.delivery-card  -->
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-5.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-5.png" alt="" />
             <span class="delivery-tag tag-fish">Рыбное</span>
           </div>
           <!--/.delivery-card  -->
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-6.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-6.png" alt="" />
             <span class="delivery-tag tag-kids">Детское</span>
           </div>
           <!--/.delivery-card  -->
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-7.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-7.png" alt="" />
             <span class="delivery-tag tag-parents">Родителям</span>
           </div>
           <!--/.delivery-card  -->
           <div class="delivery-card">
-            <img class="delivery-image" src="../img/cards/card-8.png" alt="" />
+            <img class="delivery-image" src="./img/cards/card-8.png" alt="" />
             <span class="delivery-tag tag-weekend">Праздничное</span>
           </div>
           <!--/.delivery-card  -->
@@ -189,7 +284,7 @@
           <!-- /.tabs -->
           <div class="tabs-content">
             <div class="tabs-card">
-              <img src="../img/tabs-image.png" alt="" class="tabs-image" />
+              <img src="./img/tabs-image.png" alt="" class="tabs-image" />
               <div class="tabs-card-content">
                 <h3 class="tabs-title">Куриные крылья под соусом Терияки</h3>
                 <p class="tabs-description">
@@ -209,7 +304,7 @@
               <!-- /.tabs-card-content -->
             </div>
             <div class="tabs-card">
-              <img src="../img/tabs-image.png" alt="" class="tabs-image" />
+              <img src="./img/tabs-image.png" alt="" class="tabs-image" />
               <div class="tabs-card-content">
                 <h3 class="tabs-title">Куриные крылья под соусом Терияки</h3>
                 <p class="tabs-description">
@@ -229,7 +324,7 @@
               <!-- /.tabs-card-content -->
             </div>
             <div class="tabs-card">
-              <img src="../img/tabs-image.png" alt="" class="tabs-image" />
+              <img src="./img/tabs-image.png" alt="" class="tabs-image" />
               <div class="tabs-card-content">
                 <h3 class="tabs-title">Куриные крылья под соусом Терияки</h3>
                 <p class="tabs-description">
@@ -249,7 +344,7 @@
               <!-- /.tabs-card-content -->
             </div>
             <div class="tabs-card">
-              <img src="../img/tabs-image.png" alt="" class="tabs-image" />
+              <img src="./img/tabs-image.png" alt="" class="tabs-image" />
               <div class="tabs-card-content">
                 <h3 class="tabs-title">Куриные крылья под соусом Терияки</h3>
                 <p class="tabs-description">
@@ -280,7 +375,7 @@
           <h3 class="benefits-title">Наши преимущества</h3>
           <div class="benefits-cards">
             <div class="benefits-card">
-              <img src="../img/benefit-1.svg" alt="" class="benefits-image" />
+              <img src="./img/benefit-1.svg" alt="" class="benefits-image" />
               <h4 class="benefits-card-title">Какой путь проходит ваша еда</h4>
               <span class="benefits-card-text"
                 >Вы делаете заказ на коробку с недельным запасом полуфабрикатов
@@ -289,7 +384,7 @@
             </div>
             <!-- /.benefits-card -->
             <div class="benefits-card">
-              <img src="../img/benefit2.svg" alt="" class="benefits-image" />
+              <img src="./img/benefit2.svg" alt="" class="benefits-image" />
               <h4 class="benefits-card-title">Как происходит производство</h4>
               <span class="benefits-card-text"
                 >За день до доставки мы сами готовим блюда из натуральных
@@ -298,7 +393,7 @@
             </div>
             <!-- /.benefits-card -->
             <div class="benefits-card">
-              <img src="../img/benefit3.svg" alt="" class="benefits-image" />
+              <img src="./img/benefit3.svg" alt="" class="benefits-image" />
               <h4 class="benefits-card-title">Высокие стандарты качества</h4>
               <span class="benefits-card-text"
                 >Наши повара с многолетним опытом с любовью готовят каждую
@@ -307,7 +402,7 @@
             </div>
             <!-- /.benefits-card -->
             <div class="benefits-card">
-              <img src="../img/benefit4.svg" alt="" class="benefits-image" />
+              <img src="./img/benefit4.svg" alt="" class="benefits-image" />
               <h4 class="benefits-card-title">
                 Быстрая и качественная доставка
               </h4>
@@ -325,7 +420,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img width="205" src="../img/logo.png" alt="" class="footer-logo" />
+          <img width="205" src="./img/logo.png" alt="" class="footer-logo" />
           <nav class="footer-nav">
             <a href="#" class="footer-link">Доставка и оплата</a>
             <a href="#" class="footer-link">Напишите нам</a>
@@ -402,5 +497,7 @@
       </div>
       <!-- /.container -->
     </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

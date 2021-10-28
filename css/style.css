@@ -92,7 +92,7 @@ body {
 }
 .slide-content {
   position: relative;
-  max-width: 400px;
+  max-width: 450px;
 }
 .slide-text-light {
   background-color: grey;
@@ -129,8 +129,34 @@ body {
   background-color: #fff;
   color: #5f5f61;
 }
+.slider-button {
+  cursor: pointer;
+}
+.slider-buttons {
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  justify-content: space-between;
+}
+.swiper {
+  position: relative;
+}
 .slide-summer {
   background-image: url(../img/summer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-autumn {
+  background-image: url(../img/autumn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slide-vitamin {
+  background-image: url(../img/vitamin.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -320,6 +346,7 @@ body {
 }
 
 .tabs-card {
+  margin: 15px;
   max-width: 270px;
   border-radius: 20px;
   overflow: hidden;
@@ -461,4 +488,28 @@ body {
 .social-link {
   margin-left: 20px;
   text-decoration: none;
+}
+@media (max-width: 1260px) {
+  .container {
+    max-width: 960px;
+  }
+  .search-form {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+  .tabs-content {
+    flex-wrap: wrap;
+  }
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50%-40px);
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 760px;
+  }
+  .slide {
+    padding: 70px;
+  }
 }
